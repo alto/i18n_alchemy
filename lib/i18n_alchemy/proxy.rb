@@ -25,6 +25,10 @@ module I18n
         assign_attributes(attributes) if attributes
       end
 
+      def localized?
+        true
+      end
+
       # Override to_param to always return the +proxy.to_param+. This allow us
       # to integrate with action view.
       def to_param
